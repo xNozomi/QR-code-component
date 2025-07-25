@@ -5,6 +5,10 @@
   font-family: Outfit, sans-serif;
   overflow: hidden;
 }
+:root {
+  --text-preset-1: bold 22px/120% "Outfit";
+  --text-preset-2: 400 15px/140% "Outfit";
+}
 body {
   background-color: hsl(212, 45%, 89%);
 }
@@ -26,32 +30,34 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 350px;
+  width: 320px;
   border-radius: 20px;
-  justify-content: center;
-  align-items: center;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 2px 20px hsl(216, 15%, 48%);
-  padding: 20px;
+  padding: 16px 16px 40px 16px;
+  gap: 24px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  gap: 16px;
+  width: 288px;
+  text-align: center;
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   object-fit: fill;
   border-radius: 10px;
-  margin-bottom: 30px;
 }
 .bold {
-  font-weight: 700;
+  font: var(--text-preset-1);
   color: hsl(218, 44%, 22%);
+  letter-spacing: 0;
 }
 .description {
-  font-size: 15px;
+  font: var(--text-preset-2);
   color: hsl(216, 15%, 48%);
-  margin: 23px;
-}
-@media screen and (max-width: 320px) {
-  .qr-container {
-    margin: 20px;
-  }
+  letter-spacing: 0.2px;
 }

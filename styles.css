@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Outfit, sans-serif;
+  font-family: "Outfit", sans-serif;
   overflow: hidden;
 }
 :root {
-  --text-preset-1: bold 22px/120% "Outfit";
+  --text-preset-1: 700 20px/120% "Outfit";
   --text-preset-2: 400 15px/140% "Outfit";
 }
 body {
@@ -15,8 +15,6 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-
-  bottom: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
